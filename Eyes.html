@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<html id="EyesRepo"></html>
+<link rel="stylesheet" href="Styles.css">
+
+<div class = "sidenav">
+  <ul>
+    <li><a href="Portfolio.html">Home</a></li>
+    <li><a href = "Repositories.html">Repositories</a></li>
+    <button class="dropdown-btn">Projects
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-container">
+    <li><a href="Eyes.html">Eyes Repo</a></li>
+    <li><a href="Real Time Bus.html">Real Time Bus Repo</a></li>
+    <li><a href="Pacman.html">Pacman Repo</a></li>
+  </div>
+  </ul>
+</div>
+
+
+  <body>
+    <div class="eyes">
+      <div class="eye">
+        <div class="ball"></div>
+      </div>
+      <div class="eye">
+        <div class="ball"></div>
+      </div>
+    </div>
+  </body>
+  <script>
+    var balls = document.getElementsByClassName("ball");
+    document.onmousemove = () => {
+      var x = (event.clientX * 100) / window.innerWidth + "%";
+      var y = (event.clientY * 100) / window.innerHeight + "%";
+
+      for (let i = 0; i < 2; i++) {
+        balls[i].style.left = x;
+        balls[i].style.top = y;
+        balls[i].transfoorm = "translate(-" + x + ",-" + y + ")";
+      }
+    };
+  </script>
+  <script>
+    var dropdown = document.getElementsByClassName("dropdown-btn");
+var i;
+
+for (i = 0; i < dropdown.length; i++) {
+  dropdown[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var dropdownContent = this.nextElementSibling;
+    if (dropdownContent.style.display === "block") {
+      dropdownContent.style.display = "none";
+    } else {
+      dropdownContent.style.display = "block";
+    }
+  });
+}
+
+  </script>
+</html>
