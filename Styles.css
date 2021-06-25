@@ -2,21 +2,7 @@ body{
     
     background-color: rgb(151, 184, 255);
 }
-#header {
-    text-align: center;
-    overflow: hidden;
-    padding: 50px;
-    display: flex;
-    max-width: 100%;
-    max-height: 10px;
-    text-shadow: 3px;
-    left: 200px;
-    color: rgb(11, 60, 167);
-    position: relative;
-    background-color: #FFF;
-   
-    
-}
+
 .window {
   margin-left: 200px;
 }
@@ -27,7 +13,7 @@ body{
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: #fff;
+  background-color: rgb(190, 247, 255);
   overflow-x: hidden;
   padding-top: 20px;
 }
@@ -37,7 +23,7 @@ body{
   padding: 6px 6px 6px 10px;
   text-decoration: none;
   font-size: 20px;
-  color: rgb(13, 29, 63);
+  color: rgb(0, 24, 75);
   display: block;
   border: none;
   background: none;
@@ -49,10 +35,10 @@ body{
 
 /* On mouse-over */
 .sidenav a:hover {
-  color: #0022b9;
+  color: #00af2c;
 }
 .dropdown-btn:hover {
-  color: rgb(66, 236, 248);
+  color: rgb(0, 255, 170);
 }
 
 /* Main content */
